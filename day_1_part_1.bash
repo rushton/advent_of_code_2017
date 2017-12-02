@@ -30,6 +30,7 @@ awk '/[0-9]/{if(NR==1){first=$1} print}END{print first}' | \
 # Sample output for input: '1122':
 # 2 1
 # 2 2
+# 1 1
 uniq -c | \
 # sum accordingly
 # subtract one from the number of occurences as it means there
